@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"html/template"
+	"log"
 	"net/http"
 	"os"
 )
@@ -17,6 +18,9 @@ func main() {
 		fmt.Fprintf(w, "<h1>test test etst</h1>")
 	})
 
+	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
+	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "3000"
@@ -24,5 +28,5 @@ func main() {
 
 	fmt.Println("the port is " + port)
 
-	http.ListenAndServe("0.0.0.0:"+port, nil)
+	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, nil))
 }
