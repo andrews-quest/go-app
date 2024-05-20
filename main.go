@@ -1,19 +1,28 @@
 package main
 
 import (
-	"net/http"
+	"log"
 	"os"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("hello world"))
+	app := fiber.New()
+
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("Hello, World!")
+	})
+
+	app.Get("/env", func(c *fiber.Ctx) error {
+		return c.SendString("Hello, BW!" + os.Getenv("TEST_ENV"))
 	})
 
 	port := os.Getenv("PORT")
+
 	if port == "" {
 		port = "3000"
 	}
 
-	http.ListenAndServe("8.0.0.0"+port, nil)
+	log.Fatal(app.Listen("0.0.0.0:" + port))
 }
