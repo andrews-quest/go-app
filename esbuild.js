@@ -1,4 +1,5 @@
-const esbuild = require("esbuild");
+import {sassPlugin} from "esbuild-sass-plugin";
+import esbuild from "esbuild";
 
 esbuild
     .build({
@@ -6,7 +7,7 @@ esbuild
         outdir: "public",
         bundle: true,
         minify: true,
-        plugins: [],
+        plugins: [sassPlugin()]
     })
     .then(() => console.log("Esbuild complete!"))
     .catch(() => process.exit(1))
