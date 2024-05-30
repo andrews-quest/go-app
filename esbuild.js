@@ -7,7 +7,13 @@ esbuild
         outdir: "public",
         bundle: true,
         minify: true,
-        plugins: [sassPlugin()]
+        plugins: [sassPlugin()],
+        loader: {
+            ".jpg" : "file",
+            ".png" : "file",
+            ".webp" : "file"
+        }
+        
     })
     .then(() => console.log("Esbuild complete!"))
     .catch(() => process.exit(1))

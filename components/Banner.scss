@@ -1,0 +1,28 @@
+@use 'App';
+
+#banner {
+    height: App.$bannerHeight;
+    z-index: 1;
+    position: absolute;
+
+    #background {
+        background-image: url("../resources/avatar.jpg");
+        background-position-y: center;
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    #gradient {
+        position: absolute;
+        top: 0px;
+        height: App.$bannerHeight;
+        background-image: linear-gradient(to top, black, transparent);
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+    }
+}

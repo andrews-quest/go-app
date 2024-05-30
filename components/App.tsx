@@ -1,12 +1,39 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Banner } from './Banner'
 import { ProjectViewer } from './ProjectViewer'
+import "./App.scss"
+
 
 function App() {
-    return (
+    return (<>
+            {
+                // <InfoTab />
+
+            }
+            <Banner />
         <main>
-            <ProjectViewer />
+            <div id="img"></div>
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
+            <ProjectViewer color={"#191919"}
+            header = {"Example"}
+            text = {"My project"} />
         </main>
+        </>
     )
 }
 
