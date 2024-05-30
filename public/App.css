@@ -1,1 +1,1 @@
-div{color:green;font-size:25px}
+#banner{height:600px}#banner #background{background-image:url("./avatar-XN5B5MT4.jpg");background-position-y:center;background-size:cover;position:fixed;top:0;z-index:1;height:100%;width:100%}#banner #gradient{position:absolute;top:0;height:600px;background-image:linear-gradient(to top,black,transparent);z-index:2;height:100%;width:100%}div{color:green;font-size:25px}*{margin:0;padding:0}html,body{height:100%}main{background-color:#fff;height:1000px;width:100%;display:block;z-index:3;position:absolute}
