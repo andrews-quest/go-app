@@ -11,7 +11,8 @@ esbuild
         loader: {
             ".jpg" : "file",
             ".png" : "file",
-            ".webp" : "file"
+            ".webp" : "file",
+            ".svg" : "file"
         }
         
     })

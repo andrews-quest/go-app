@@ -10,8 +10,8 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		t, _ := template.ParseFiles("index.html")
-		t.Execute(w, "index.html")
+		t, _ := template.ParseFiles("./public/index.html")
+		t.Execute(w, "./index.html")
 	})
 
 	http.HandleFunc("/env", func(w http.ResponseWriter, r *http.Request) {

@@ -1,17 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Banner } from './Banner'
+import { InfoTab } from './InfoTab' 
 import { ProjectViewer } from './ProjectViewer'
 import "./App.scss"
 
 
 function App() {
     return (<>
-            {
-                // <InfoTab />
-
-            }
-            <Banner />
+        <InfoTab />
+        <Banner />
         <main>
             <div id="img"></div>
             <ProjectViewer color={"#191919"}
