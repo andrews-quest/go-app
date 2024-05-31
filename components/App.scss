@@ -1,4 +1,4 @@
-$bannerHeight: 630px;
+$bannerHeight: 85vh;
 
 * {
     margin: 0;
@@ -44,4 +44,8 @@ main {
     width: 100%;
     background-color: grey;
     margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+    $bannerHeight: 65vh;
 }

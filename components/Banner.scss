@@ -38,9 +38,23 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 280px;
+    top: 33vh;
     canvas {
+        width: 65vw;
         stroke-dasharray: 2000;
         stroke-dashoffset: 200;
+    }
+}
+
+@media (max-width: 1280px) {
+    #signature {
+        top: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #signature {
+        top: 65vh;
+        width: 90vw; 
     }
 }
