@@ -1,4 +1,4 @@
-$bannerHeight: 700px;
+$bannerHeight: 630px;
 
 * {
     margin: 0;
@@ -37,4 +37,11 @@ main {
         transform: 
             translateY(calc(var(--parallax-speed) * 2500px));
     }
+}
+
+#info_tab {
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: 30px;
 }

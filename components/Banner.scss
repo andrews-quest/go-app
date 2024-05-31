@@ -30,12 +30,17 @@
         width: 100%;
     }
 
-    #signature {
-        z-index: 3;
-        position: absolute;
-        display: block;
+}
+
+#signature {
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 280px;
+    canvas {
         stroke-dasharray: 2000;
         stroke-dashoffset: 200;
-        background-color: black;
     }
 }

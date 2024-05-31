@@ -1,3 +1,12 @@
 import React from "react";
+import "./App";
 
-export 
+export const InfoTab: React.FC <{
+
+}> = ({
+
+}) => {
+    return (
+        <div id="info_tab"></div>
+    )
+}

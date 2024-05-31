@@ -8,9 +8,9 @@ import "./App.scss"
 
 function App() {
     return (<>
-        <InfoTab />
         <Banner />
         <main>
+        <InfoTab />
             <div id="img"></div>
             <ProjectViewer color={"#191919"}
             header = {"Example"}
