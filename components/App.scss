@@ -48,6 +48,6 @@ main {
     margin-bottom: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-aspect-ratio: 9/16) {
     $bannerHeight: 65vh;
 }
