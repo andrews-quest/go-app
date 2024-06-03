@@ -37,7 +37,7 @@ main {
 @keyframes parallax {
     to {
         transform: 
-            translateY(calc(var(--parallax-speed) * 1500px));
+            translateY(calc(var(--parallax-speed) * 1200px));
     }
 }
 

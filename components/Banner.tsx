@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./Banner.scss";
 import {Signature} from "./Signature.tsx"
 
@@ -10,12 +10,24 @@ export const Banner: React.FC <{
 
 }) => {
 
+    const backRef = useRef(null);
+
+    const [parallaxReached, setParallaxReached] = useState<boolean>();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[-1];
+            setParallaxReached(entry.isIntersecting)
+
+        }, {threshold: 0})
+        observer.observe(backRef.current!)
+    }, [])
 
     return (        
         <>
         <Signature />
         <div id="banner" >
-            <div id="background"></div>
+            <div id={parallaxReached ? "background" : "background_parallax"} ref={backRef}></div>
             <div id="gradient"></div>
         </div>
         </>

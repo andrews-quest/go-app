@@ -20,6 +20,17 @@
         width: 100%;
     }
 
+    #background_parallax {
+        background-image: url("../resources/avatar.jpg");
+        background-position-y: center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+    }
+
     #gradient {
         position: absolute;
         top: 0px;
