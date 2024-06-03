@@ -52,7 +52,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-aspect-ratio: 9/16) {
     #signature {
         top: 65vh;
         width: 90vw; 

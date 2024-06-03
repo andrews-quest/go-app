@@ -10,8 +10,9 @@ export const ProjectViewer: React.FC<{
     text, 
     color
 }) => {
+
     return (
-        <div id="project_viewer" >
+        <div id="project_viewer" style={{backgroundColor: color}}>
             <h2>{header}</h2>
             <p>{text}</p>
         </div>
