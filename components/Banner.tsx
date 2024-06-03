@@ -9,10 +9,12 @@ export const Banner: React.FC <{
 }> = ({
 
 }) => {
-    return (
+
+
+    return (        
         <>
         <Signature />
-        <div id="banner">
+        <div id="banner" >
             <div id="background"></div>
             <div id="gradient"></div>
         </div>
