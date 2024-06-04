@@ -102,7 +102,9 @@ export const ProjectViewer: React.FC<{
                         <p>{text}</p>
                     </div>
                     <div id="tech_stack">
-                        {RenderTechStack(tech_stack)}
+                        <div id="logos">
+                            {RenderTechStack(tech_stack)}
+                        </div>
                     </div>
                     <div id="link_div">
 
