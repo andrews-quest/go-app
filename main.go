@@ -10,12 +10,8 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		t, _ := template.ParseFiles("./index.html")
-		t.Execute(w, "./index.html")
-	})
-
-	http.HandleFunc("/env", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "<h1>test test etst</h1>")
+		t, _ := template.ParseFiles("./public/index.html")
+		t.Execute(w, "./public/index.html")
 	})
 
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))

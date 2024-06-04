@@ -56,18 +56,20 @@
 
             #tech_stack {
                 height: 100px;
-                background-color: grey;
                 display: flex;
                 justify-content: center;
 
                 img {
                     height: 90%;
+                    cursor: pointer;
+                    margin-left: 5px;
+                    margin-right: 5px;
                 }
-            }
 
             #link_div {
                 height: 100px;
                 background-color: red;
+                }
             }
         }
     }
