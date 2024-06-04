@@ -15,6 +15,17 @@ export const ProjectViewer: React.FC<{
     video
 }) => {
 
+    function RenderVideo(video){
+        if (video != null) {
+            return (
+            <div id="vid_div">
+                <iframe src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; full-screen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            )
+        } else {
+            return null;
+        }
+    }
 
     return (
         <div id="project_viewer" style={{backgroundColor: color}}>
@@ -22,9 +33,7 @@ export const ProjectViewer: React.FC<{
                 <h2>{header}</h2>
             </div>
             <div id="content_div">
-                <div id="vid_div">
-                    <iframe src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; full-screen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                {RenderVideo(video)}
                 <div id="info_div">
                     <div id="proj_desc">
                         <p>{text}</p>
