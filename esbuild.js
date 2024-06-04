@@ -14,7 +14,6 @@ esbuild
             ".webp" : "file",
             ".svg" : "file"
         }
-        
     })
     .then(() => console.log("Esbuild complete!"))
     .catch(() => process.exit(1))

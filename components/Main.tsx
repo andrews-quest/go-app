@@ -13,16 +13,23 @@ export const Main: React.FC <{
         <InfoTab />
             <ProjectViewer color={"#BFA8BF"}
             header = {"W1NC3NT"}
-            text = {"Fleißiger Chat-Bot-Dienstbote! Er kann Finanzen tracken."} />
+            text = {"Fleißiger Chat-Bot-Dienstbote! Er kann Finanzen tracken."}
+            image = {'../resources/w1nc3nt.png'}
+            video = {"https://www.youtube.com/embed/MHeMFTgxyAI?si=40-eLAD5wNzCwZg2"}>
+                <div id="title_img" style={{backgroundImage: 'url("../resources/w1nc3nt.png") linear-gradient(to left, black, transparent)' }}></div>
+            </ProjectViewer>
             <ProjectViewer color={"#53ed50"}
             header = {"Java Full-Stack App"}
-            text = {"Service"} />
+            text = {"Service"}
+            image = {null} />
             <ProjectViewer color={"#5a57ed"}
             header = {"Arduino Projects"}
-            text = {"Lots of Stuff"} />
+            text = {"Lots of Stuff"} 
+            image = {null} />
             <ProjectViewer color={"#d6d6d6"}
             header = {"This Site"}
-            text = {"You guess it"} />
+            text = {"You guess it"} 
+            image = {null} />
         </main>
     )
 }
