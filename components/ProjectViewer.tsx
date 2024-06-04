@@ -2,6 +2,7 @@ import React from 'react'
 import "./ProjectViewer.scss"
 
 import reactLogo from "../resources/react_logo.png"
+import goLogo from "../resources/go_logo.png"
 
 export const ProjectViewer: React.FC<{
     header : string,
@@ -32,13 +33,16 @@ export const ProjectViewer: React.FC<{
     }
 
     function RenderTechStack (tech_stack) {
+        var logos : React.JSX.Element[] = []
         for (var i in tech_stack){
             if (tech_stack[i] == "react") {
-                return <img src={reactLogo}></img>
-            } else {
-                return <div id="fail"></div>
+                logos.push(<img src={reactLogo}></img>)
+            }
+            if (tech_stack[i] == "go") {
+                logos.push(<img src={goLogo}></img>)
             }
         }
+        return logos
     }
 
     return (

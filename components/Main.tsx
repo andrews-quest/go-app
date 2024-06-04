@@ -30,7 +30,7 @@ export const Main: React.FC <{
             header = {"This Site"}
             text = {"You guess it"} 
             image = {null} 
-            tech_stack={["react"]}/>
+            tech_stack={["react", "go"]}/>
         </main>
     )
 }
