@@ -29,7 +29,8 @@ export const Main: React.FC <{
             <ProjectViewer color={"#d6d6d6"}
             header = {"This Site"}
             text = {"You guess it"} 
-            image = {null} />
+            image = {null} 
+            tech_stack={["react"]}/>
         </main>
     )
 }

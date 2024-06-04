@@ -57,6 +57,12 @@
             #tech_stack {
                 height: 100px;
                 background-color: grey;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    height: 90%;
+                }
             }
 
             #link_div {
