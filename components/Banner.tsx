@@ -27,7 +27,7 @@ export const Banner: React.FC <{
         <>
         <Signature />
         <div id="banner" >
-            <div id={parallaxReached ? "background" : "background_parallax"} ref={backRef}></div>
+            <div id={!parallaxReached ? "background" : "background_parallax"} ref={backRef}></div>
             <div id="gradient"></div>
         </div>
         </>
