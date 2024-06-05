@@ -14,10 +14,8 @@ func main() {
 		t.Execute(w, "./public/index.html")
 	})
 
-	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
-	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
 	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
-	http.Handle("/resources/", http.StripPrefix("/resources/", http.FileServer(http.Dir("resources"))))
+	http.Handle("/resources/", http.StripPrefix("/resources/", http.FileServer(http.Dir("public/resources"))))
 
 	port := os.Getenv("PORT")
 	if port == "" {

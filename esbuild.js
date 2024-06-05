@@ -5,6 +5,7 @@ esbuild
     .build({
         entryPoints: ["components/App.tsx"],
         outdir: "public",
+        assetNames: "resources/[name]-[hash]",
         bundle: true,
         minify: true,
         plugins: [sassPlugin()],
