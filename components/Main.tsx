@@ -35,7 +35,7 @@ export const Main: React.FC <{
             text = {"You guess it"} 
             image = {null} 
             video={null}
-            tech_stack={["react", "go", "sass", "inkscape"]}/>
+            tech_stack={["go", "react", "esbuild", "sass", "inkscape"]}/>
         </main>
     )
 }

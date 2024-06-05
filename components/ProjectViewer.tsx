@@ -14,6 +14,7 @@ import platformioLogo from "../resources/platformio_logo.png"
 import bootstrapLogo from "../resources/bootstrap_logo.png"
 import telegramLogo from "../resources/telegram_logo.png"
 import inkscapeLogo from "../resources/inkscape_logo.png"
+import esbuildLogo from "../resources/esbuild_logo.png"
 
 
 export const ProjectViewer: React.FC<{
@@ -85,6 +86,9 @@ export const ProjectViewer: React.FC<{
             }
             if(tech_stack[i] == "inkscape") {
                 logos.push(<img src={inkscapeLogo} title='Inkscape'></img>)
+            }
+            if(tech_stack[i] == "esbuild") {
+                logos.push(<img src={esbuildLogo} title='ESBuild'></img>)
             }
         }
         return logos
