@@ -14,9 +14,6 @@ func main() {
 		t.Execute(w, "./public/index.html")
 	})
 
-	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
-	http.Handle("/resources/", http.StripPrefix("/resources/", http.FileServer(http.Dir("public/resources"))))
-
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "3000"

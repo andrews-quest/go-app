@@ -3,6 +3,9 @@ import "./App.scss";
 import { ProjectViewer } from "./ProjectViewer";
 import { InfoTab } from "./InfoTab";
 
+import ukrFlag from "../resources/ukr_flag.png"
+import deFlag from "../resources/de_flag.png"
+
 export const Main: React.FC <{
 
 }> = ({
@@ -10,7 +13,14 @@ export const Main: React.FC <{
 }) => {
     return (
         <main>
-        <InfoTab />
+            <InfoTab text={<p>Hallo!<br />
+                            Ich bin Andrii Roshkovan, Backend und Embedded Entwickler.<br />
+                            Ich komme aus der Ukraine<img src={ukrFlag}></img>,
+                            jedoch jetzt bin ich in Deutschland <img src={deFlag}></img> 
+                            tätig, nähmlich in Merseburg, Sachsen-Anhalt.<br />
+                            Unten sind manche von meinen Programmierungsprojekten!
+                            </p>} />
+
             <ProjectViewer color={"#BFA8BF"}
             header = {"W1NC3NT"}
             text = {"Fleißiger Chat-Bot-Dienstbote! Er kann Finanzen tracken."}
