@@ -1,6 +1,6 @@
 #project_viewer {
     width: 80%;
-    height: 600px;
+    min-height: 600px;
     font-size: 25px;
     margin-bottom: 60px;
     margin-left: auto;
@@ -19,6 +19,7 @@
 
     #header_div {
     position: relative;
+    min-height: 40px;
     height: 10%;
         h2 {
             position: absolute;
@@ -30,6 +31,7 @@
         height: 90%;
         display: flex;
         flex-direction: row;
+        margin-top: 5%;
         #vid_div {
             display: flex;
             flex-direction: column;
@@ -44,23 +46,29 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             width: 100%;
+            height: 100%;
             padding: 2%;
 
             #proj_desc {
                 position: relative;
                 height: 70%;
+                min-height: 200px;
                 width: 100%;
                 border: black solid 1px;
                 margin-bottom: 9px;
+                padding: 2%;
             }
 
             #tech_stack {
-                height: 100px;
+                position: relative;
+                height: 12%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                margin-top: 5%;
 
                     h3 {
                         
@@ -71,10 +79,12 @@
                     flex-direction: row;
                     align-content: center;
                     justify-content: center;
+                    flex-wrap: wrap;
                     height: 85%;
 
                     img {
                         height: 90%;
+                        max-height: 100px;
                         cursor: pointer;
                         margin-left: 5px;
                         margin-right: 5px;
@@ -94,5 +104,32 @@
     p {
         position: absolute;
         z-index: 2;
+    }
+}
+
+@media (max-width: 660px){
+    #project_viewer {
+        min-height: 300px;
+        #content_div {
+            flex-direction: column;
+
+            #info_div {
+                #project_desc {
+                    margin-top: 7%;
+                }
+            }
+
+
+            #info_div {
+                #tech_stack{
+                    width: 80%;
+                    #logos {
+                        img {
+                            max-height: 60px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

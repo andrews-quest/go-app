@@ -32,7 +32,7 @@ main {
     z-index: 3;
     position: absolute;
     top: $bannerHeight;
-
+    overflow: hidden;
 }
 
 @keyframes parallax {
@@ -49,6 +49,6 @@ main {
     margin-bottom: 30px;
 }
 
-@media (max-aspect-ratio: 9/16) {
+@media (max-width: 660px) {
     $bannerHeight: 65vh;
 }
