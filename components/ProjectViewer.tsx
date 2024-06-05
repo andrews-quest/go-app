@@ -15,6 +15,7 @@ import bootstrapLogo from "../resources/bootstrap_logo.png"
 import telegramLogo from "../resources/telegram_logo.png"
 import inkscapeLogo from "../resources/inkscape_logo.png"
 import esbuildLogo from "../resources/esbuild_logo.png"
+import tsLogo from "../resources/ts_logo.png"
 
 
 export const ProjectViewer: React.FC<{
@@ -89,6 +90,9 @@ export const ProjectViewer: React.FC<{
             }
             if(tech_stack[i] == "esbuild") {
                 logos.push(<img src={esbuildLogo} title='ESBuild'></img>)
+            }
+            if(tech_stack[i] == "ts") {
+                logos.push(<img src={tsLogo} title='TypeScript'></img>)
             }
         }
         return logos
