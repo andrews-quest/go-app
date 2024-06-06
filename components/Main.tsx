@@ -26,7 +26,7 @@ export const Main: React.FC <{
             text = {"Fleißiger Chat-Bot-Dienstbote! Er kann Finanzen tracken."}
             image = {'../resources/w1nc3nt.png'}
             video={null}
-            tech_stack = {["java", "spring", "telegram", "mysql", "redis"]}>
+            tech_stack = {["java", "spring", "telegram", "mysql", "redis", "railway"]}>
                 <div id="title_img" style={{backgroundImage: 'url("../resources/w1nc3nt.png") linear-gradient(to left, black, transparent)' }}></div>
             </ProjectViewer>
 
@@ -48,7 +48,14 @@ export const Main: React.FC <{
             text = {"You guess it"} 
             image = {null} 
             video={null}
-            tech_stack={["go", "react", "ts", "esbuild", "sass", "inkscape"]}/>
+            tech_stack={["go", "react", "ts", "esbuild", "sass", "inkscape", "railway"]}/>
+
+            <ProjectViewer color={"#f8ff47"}
+            header = {"PyTorch Snake Reinforcement"}
+            text = {"ML"} 
+            image = {null} 
+            video={null}
+            tech_stack={["python", "pytorch", "pygame"]}/>
         </main>
     )
 }

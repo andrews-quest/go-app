@@ -16,6 +16,10 @@ import telegramLogo from "../resources/telegram_logo.png"
 import inkscapeLogo from "../resources/inkscape_logo.png"
 import esbuildLogo from "../resources/esbuild_logo.png"
 import tsLogo from "../resources/ts_logo.png"
+import railwayLogo from "../resources/railway_logo.png"
+import pythonLogo from "../resources/python_logo.png"
+import pytorchLogo from "../resources/pytorch_logo.png"
+import pygameLogo from "../resources/pygame_logo.png"
 
 
 export const ProjectViewer: React.FC<{
@@ -91,8 +95,17 @@ export const ProjectViewer: React.FC<{
             if(tech_stack[i] == "esbuild") {
                 logos.push(<img src={esbuildLogo} title='ESBuild'></img>)
             }
-            if(tech_stack[i] == "ts") {
-                logos.push(<img src={tsLogo} title='TypeScript'></img>)
+            if(tech_stack[i] == "railway") {
+                logos.push(<img src={railwayLogo} title='Railway'></img>)
+            }
+            if(tech_stack[i] == "python") {
+                logos.push(<img src={pythonLogo} title='Python'></img>)
+            }
+            if(tech_stack[i] == "pygame") {
+                logos.push(<img src={pygameLogo} title='PyGame'></img>)
+            }
+            if(tech_stack[i] == "pytorch") {
+                logos.push(<img src={pytorchLogo} title='PyTorch'></img>)
             }
         }
         return logos
