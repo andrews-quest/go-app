@@ -52,9 +52,9 @@ export const Main: React.FC <{
 
             <ProjectViewer color={["#f8ff47", "#4b194f"]}
             header = {"PyTorch Snake Reinforcement"}
-            text = {"ML"} 
+            text = {"Ein Neuronales Netzwerk, das lernt, das klassische Spiel zu spielen."} 
             image = {null} 
-            video={null}
+            video={"https://www.youtube.com/embed/cPfVUUn-rmw?si=OLgM7sVgbJMCLZrF"}
             tech_stack={["python", "pytorch", "pygame"]}/>
         </main>
     )
