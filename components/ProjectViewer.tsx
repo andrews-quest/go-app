@@ -25,7 +25,7 @@ import pygameLogo from "../resources/pygame_logo.png"
 export const ProjectViewer: React.FC<{
     header : string,
     text : string,
-    color : string,
+    color : string[],
     image : string | null,
     video : string | null,
     tech_stack : string[]
@@ -112,7 +112,7 @@ export const ProjectViewer: React.FC<{
     }
 
     return (
-        <div id="project_viewer" style={{backgroundColor: color}}>
+        <div id="project_viewer" style={{backgroundColor: color[0]}}>
             <div id="header_div">
                 <h2>{header}</h2>
             </div>
@@ -122,7 +122,7 @@ export const ProjectViewer: React.FC<{
                     <div id="proj_desc">
                         <p>{text}</p>
                     </div>
-                    <div id="tech_stack">
+                    <div id="tech_stack" style={{backgroundColor: color[1]}}>
                         <div id="logos">
                             {RenderTechStack(tech_stack)}
                         </div>
