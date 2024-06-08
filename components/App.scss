@@ -64,7 +64,7 @@ main {
     }
 }
 
-@media (max-width: 660px) {
+@media screen and  (max-width: 660px) {
     $bannerHeight: 65vh;
 
     #info_tab {
@@ -74,6 +74,11 @@ main {
         padding-bottom: 5%;
         p {
             width: 90%;
+            font-size: 4vh;
+        }
+
+        img {
+            height: 4vh;
         }
     }
 }
