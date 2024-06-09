@@ -20,7 +20,7 @@ import railwayLogo from "../resources/railway_logo.png"
 import pythonLogo from "../resources/python_logo.png"
 import pytorchLogo from "../resources/pytorch_logo.png"
 import pygameLogo from "../resources/pygame_logo.png"
-
+import cudaLogo from "../resources/cuda_logo.png" 
 
 export const ProjectViewer: React.FC<{
     header : string,
@@ -95,6 +95,9 @@ export const ProjectViewer: React.FC<{
             if(tech_stack[i] == "esbuild") {
                 logos.push(<img src={esbuildLogo} title='ESBuild'></img>)
             }
+            if(tech_stack[i] == "ts") {
+                logos.push(<img src={tsLogo} title='TypeScript'></img>)
+            }
             if(tech_stack[i] == "railway") {
                 logos.push(<img src={railwayLogo} title='Railway'></img>)
             }
@@ -106,6 +109,9 @@ export const ProjectViewer: React.FC<{
             }
             if(tech_stack[i] == "pytorch") {
                 logos.push(<img src={pytorchLogo} title='PyTorch'></img>)
+            }
+            if(tech_stack[i] == "cuda") {
+                logos.push(<img src={cudaLogo} title='NVidia CUDA'></img>)
             }
         }
         return logos
