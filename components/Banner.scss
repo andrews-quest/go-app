@@ -48,11 +48,34 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     top: 33vh;
-    canvas {
+    svg {
         width: 65vw;
-        stroke-dasharray: 2000;
-        stroke-dashoffset: 200;
+        fill: none;
+        animation: fill_anim 5s ease forwards;
+        path {
+            stroke-dasharray: 2000;
+            stroke-dashoffset: 2000;
+            stroke: white;
+            stroke-width:1.58659;
+            animation: dash 5s linear forwards;
+        }
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill_anim {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
     }
 }
 
