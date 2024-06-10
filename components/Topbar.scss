@@ -6,9 +6,10 @@
     justify-content: center;
     position: fixed;
     z-index: 10;
+    transition: transform 0.2s;
     #topbar_gradient {
         position: fixed;
-        height: 100px;
+        height: 200px;
         width: 100%;
         background-image: linear-gradient(to bottom, black, transparent);
     }
@@ -39,6 +40,10 @@
 
         }
     }
+}
+
+.hidden {
+    transform: translateY(-40px);
 }
 
 @media (max-width: 660px) {

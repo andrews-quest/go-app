@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "./Topbar.scss";
 import gitHubLogo from "../resources/github_logo.png";
 import linkedInLogo from "../resources/linkedin_logo.png";
@@ -8,8 +8,27 @@ export const Topbar: React.FC <{
 }> = ({
 
 }) => {
+    
+    const topbarRef = useRef(null);
+
+    useEffect(() => {
+        let lastScrollY = window.scrollY;
+        console.log("lastScroll is " + lastScrollY);
+
+        window.addEventListener("scroll", () => {
+            if (lastScrollY < window.scrollY) {
+                topbarRef.current!.style.transform = "translateY(-100px)";
+            } else {
+                topbarRef.current!.style.transform = "translateY(0px)";
+            }
+
+            lastScrollY = window.scrollY;
+        })
+    }, [topbarRef]
+    );
+
     return( 
-        <div id="topbar">
+        <div id="topbar" ref={topbarRef}>
             <div id="topbar_gradient"></div>
             <div id="buttons">
                 <a href="https://github.com/andrews-quest" target="_blank">
