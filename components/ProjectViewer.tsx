@@ -41,8 +41,11 @@ export const ProjectViewer: React.FC<{
     function RenderVideo (video) {
         if (video != null) {
             return (
-            <div id="vid_div">
-                <iframe src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; full-screen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div id="vid_div" >
+                <iframe src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; full-screen" 
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    ></iframe>
             </div>
             )
         } else {
