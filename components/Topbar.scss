@@ -1,0 +1,42 @@
+#topbar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    #topbar_gradient {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to bottom, black, transparent);
+    }
+    #buttons {
+        height: 100%;
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        a {
+            height: 100%;
+            #button {
+                border-radius: 10px;
+                border: solid 1px black;
+                background-color: white;
+                height: 90%;
+                min-width: 120px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            img {
+                height: 20px;
+            }
+
+        }
+    }
+}
