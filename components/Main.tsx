@@ -26,7 +26,8 @@ export const Main: React.FC <{
             text = {"Fleißiger Chat-Bot-Dienstbote! Er kann Finanzen tracken."}
             image = {'../resources/w1nc3nt.png'}
             video={null}
-            tech_stack = {["java", "spring", "telegram", "mysql", "redis", "railway"]}>
+            tech_stack = {["java", "spring", "telegram", "mysql", "redis", "railway"]}
+            github={"https://github.com/andrews-quest/w1nc3nt"}>
                 <div id="title_img" style={{backgroundImage: 'url("../resources/w1nc3nt.png") linear-gradient(to left, black, transparent)' }}></div>
             </ProjectViewer>
 
@@ -35,27 +36,31 @@ export const Main: React.FC <{
             text = {"Service"}
             video= {null}
             image = {null} 
-            tech_stack={["java", "spring", "bootstrap"]}/>
+            tech_stack={["java", "spring", "bootstrap"]}
+            github={"https://github.com/andrews-quest/full-java-application"}/>
 
             <ProjectViewer color={["#5a57ed", "#c9c8f7"]}
             header = {"Arduino Projects"}
             text = {"Lots of Stuff"} 
             image = {null} video = {"https://www.youtube.com/embed/MHeMFTgxyAI?si=40-eLAD5wNzCwZg2"}
-            tech_stack={["arduino", "platformio", "c"]}/>
+            tech_stack={["arduino", "platformio", "c"]}
+            github={""}/>
             
             <ProjectViewer color={["#d6d6d6", "#fffcc4"]}
             header = {"This Site"}
             text = {"You guess it"} 
             image = {null} 
             video={null}
-            tech_stack={["go", "react", "ts", "esbuild", "sass", "inkscape", "railway"]}/>
+            tech_stack={["go", "react", "ts", "esbuild", "sass", "inkscape", "railway"]}
+            github={"https://github.com/andrews-quest/portfolio-website"}/>
 
             <ProjectViewer color={["#f8ff47", "#4b194f"]}
             header = {"PyTorch Snake Reinforcement"}
             text = {"Ein Neuronales Netzwerk, das lernt, das klassische Spiel zu spielen."} 
             image = {null} 
             video={"https://www.youtube.com/embed/cPfVUUn-rmw?si=OLgM7sVgbJMCLZrF"}
-            tech_stack={["python", "pytorch", "cuda", "pygame"]}/>
+            tech_stack={["python", "pytorch", "cuda", "pygame"]}
+            github={"https://github.com/andrews-quest/snake-game-reinforcement-learning"}/>
         </main>
     )
 }

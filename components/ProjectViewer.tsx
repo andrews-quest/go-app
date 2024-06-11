@@ -28,14 +28,16 @@ export const ProjectViewer: React.FC<{
     color : string[],
     image : string | null,
     video : string | null,
-    tech_stack : string[]
+    tech_stack : string[],
+    github: string
 }> = ({
     header,
     text, 
     color,
     image,
     video,
-    tech_stack
+    tech_stack,
+    github
 }) => {
 
     function RenderVideo (video) {
@@ -137,7 +139,9 @@ export const ProjectViewer: React.FC<{
                         </div>
                     </div>
                     <div id="link_div">
-
+                        <a href={github} target='_blank'>
+                            <div id="github_link">GitHub</div>
+                        </a>
                     </div>
                 </div>
             </div>
