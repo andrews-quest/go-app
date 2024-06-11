@@ -21,13 +21,13 @@
         position: absolute;
         a {
             text-decoration: none;
-            color: black;
+            color: white;
             :link {
                 text-decoration: none;
             }
             :visited {
                 text-decoration: none;
-                color: black;
+                color: white;
             }
             :hover {
                 text-decoration: none;
@@ -37,9 +37,10 @@
             }
             height: 100%;
             #button {
-                border-radius: 10px;
-                border: solid 1px black;
-                background-color: rgba(255, 255, 255, 0.950);
+                border-radius: 2px;
+                border: solid 4px white;
+                box-sizing: border-box;
+                background-color: rgba(196, 196, 196, 0.592);
                 height: 90%;
                 min-width: 120px;
                 display: flex;
@@ -53,8 +54,10 @@
             }
             img {
                 height: 20px;
+                margin-right: 7px;
             }
             h2 {
+
             }
 
         }
