@@ -1,6 +1,6 @@
 #project_viewer {
     width: 80%;
-    min-height: 400px;
+    min-height: 250px;
     font-size: 25px;
     margin-bottom: 60px;
     margin-left: auto;
@@ -30,7 +30,7 @@
         height: 90%;
         display: flex;
         flex-direction: row;
-        margin-top: 5%;
+        margin-top: 1%;
         #vid_div {
             display: flex;
             flex-direction: column;
@@ -53,11 +53,14 @@
             #proj_desc {
                 position: relative;
                 height: 70%;
-                min-height: 200px;
+                min-height: 60px;
                 width: 100%;
                 border: black dotted 1px;
                 margin-bottom: 9px;
                 padding: 2%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             #tech_stack {

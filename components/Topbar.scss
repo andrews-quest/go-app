@@ -32,7 +32,7 @@
             :hover {
                 text-decoration: none;
             }
-            :active {
+            :active{
                 text-decoration: none;
             }
             height: 100%;
@@ -51,6 +51,9 @@
                 padding-left: 12px;
                 padding-right: 12px;
                 cursor: pointer;
+                :hover #button{
+                    background-color: rgba(216, 216, 216, 0.592);
+                }
             }
             img {
                 height: 20px;
