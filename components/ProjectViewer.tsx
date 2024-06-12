@@ -128,7 +128,13 @@ export const ProjectViewer: React.FC<{
                 <h2>{header}</h2>
             </div>
             <div id="content_div">
-                {RenderVideo(video)}
+                <div id="media_div">
+                    {(() => {if (image) {
+                        return (<img src={image}></img>);
+                    }})()
+                    }
+                    {RenderVideo(video)}
+                </div>
                 <div id="info_div">
                     <div id="proj_desc">
                         <p>{text}</p>
