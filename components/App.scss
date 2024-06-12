@@ -24,6 +24,7 @@ html, body {
     animation-timeline: scroll(block nearest);
     animation-duration: 1ms;
     --parallax-speed: 1;
+    filter: brightness(0.8);
 }
 
 main {
