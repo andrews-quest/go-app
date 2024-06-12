@@ -32,12 +32,12 @@ export const Main: React.FC <{
             </ProjectViewer>
 
             <ProjectViewer color={["#53ed50", "#ffff59"]}
-            header = {"Java Full-Stack App"}
-            text = {"Service"}
+            header = {"Flaming Wheels Expeditioning"}
+            text = {"Eine Adminseite von einer ausgedachten Beförderungsfirma, die ich für Traing erzeugt hat."}
             video= {null}
-            image = {null} 
+            image = {"../resources/flaming_wheels.svg"} 
             tech_stack={["java", "spring", "bootstrap"]}
-            github={"https://github.com/andrews-quest/full-java-application"}/>
+            github={"https://github.com/andrews-quest/flaming-wheels-spring-fullstack"}/>
 
             <ProjectViewer color={["#5a57ed", "#c9c8f7"]}
             header = {"Arduino Projects"}
